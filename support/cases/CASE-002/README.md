@@ -39,7 +39,7 @@ Exit 1 with a fatal diagnostic, and both source files unchanged. Distinct destin
 
 ## Actual results
 
-All of the above passed on Linux with Go 1.25.1 (`go test -race -count=1 ./...`, plus gofmt, vet and build clean). The Apache 2k sample still gives input 2000, parsed 2000, unparsed 0, notice 1405, error 595, and Time, Level and Content each matching 2000 of 2000. Pointing `-output` at the downloaded sample log exited 1 and the dataset checksums still verified. CI for the fix commit is pending until checked.
+All of the above passed on Linux with Go 1.25.1 (`go test -race -count=1 ./...`, plus gofmt, vet and build clean). The Apache 2k sample still gives input 2000, parsed 2000, unparsed 0, notice 1405, error 595, and Time, Level and Content each matching 2000 of 2000. Pointing `-output` at the downloaded sample log exited 1 and the dataset checksums still verified. CI for the fix commit f6e83b3: `ci` push run [45747243041](https://github.com/ChieNwosu/enterprise-incident-intelligence/actions/runs/45747243041) and pull_request run [45747250736](https://github.com/ChieNwosu/enterprise-incident-intelligence/actions/runs/45747250736) completed with success, with the gofmt, vet, test and build steps each concluded success (per-step conclusions only). Independent Codex review of f6e83b3 (REM-001) returned APPROVED with no remaining merge blockers.
 
 ## Remaining limitations
 

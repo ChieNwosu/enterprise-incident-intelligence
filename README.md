@@ -12,9 +12,13 @@ Only Day 1 is implemented. Everything else is planned.
 | Reference CSV field agreement check | Done (Day 1) |
 | Synthetic test fixtures, unit and CLI tests | Done (Day 1) |
 | Dataset download script and provenance notes | Done (Day 1) |
-| GitHub Actions workflow, devcontainer | Written. CI for commit 452f848 (pre-remediation): workflow `ci` run [45618163063](https://github.com/ChieNwosu/enterprise-incident-intelligence/actions/runs/45618163063) (push) and run [45618184731](https://github.com/ChieNwosu/enterprise-incident-intelligence/actions/runs/45618184731) (pull_request) both concluded success, per the GitHub REST API. Per-step job logs were not inspected. This applies only to 452f848; CI for later commits is pending until checked. |
+| GitHub Actions workflow, devcontainer | Written. CI for commit 452f848 (pre-remediation): workflow `ci` run [45618163063](https://github.com/ChieNwosu/enterprise-incident-intelligence/actions/runs/45618163063) (push) and run [45618184731](https://github.com/ChieNwosu/enterprise-incident-intelligence/actions/runs/45618184731) (pull_request) both concluded success, per the GitHub REST API. Per-step job logs were not inspected. This applies only to 452f848. CI for approved engineering commit f6e83b3: workflow `ci` run [45747243041](https://github.com/ChieNwosu/enterprise-incident-intelligence/actions/runs/45747243041) (push) and run [45747250736](https://github.com/ChieNwosu/enterprise-incident-intelligence/actions/runs/45747250736) (pull_request) both completed with success, and the gofmt, vet, test and build steps each concluded success, per the GitHub REST API (per-step conclusions only, raw job logs not read). CI for the later documentation-only commit is to be checked after the push. |
 | Curriculum skeleton, evergreen notes, support cases CASE-001 and CASE-002 | Done (Day 1), skeleton level |
 | AWS, Kubernetes, PyTorch, SAS, anomaly or incident models | Planned, not started |
+
+## Review status and project management
+
+Independent Codex review of the approved engineering commit f6e83b36b1791277e787cf8dfb88ef74df2fc0b1 (REM-001, the CASE-002 fix) returned APPROVED with no remaining merge blockers. PR #1 is open and not merged. GitHub Issues, GitHub Projects and Markdown are the canonical project management tools. Jira, Confluence and MCP-based project management automation are deferred.
 
 ## Quick start
 
