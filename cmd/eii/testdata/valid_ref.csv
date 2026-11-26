@@ -1,0 +1,4 @@
+LineId,Time,Level,Content,EventId,EventTemplate
+1,Mon Jan 02 10:00:00 2023,error,worker 12 failed on port 8080,E1,worker <*> failed on port <*>
+2,Mon Jan 02 10:00:05 2023,notice,"worker 13 started",E2,worker <*> started
+3,Mon Jan 02 09:59:00 2023,warn,worker 99 failed on port 8081,E1,worker <*> failed on port <*>

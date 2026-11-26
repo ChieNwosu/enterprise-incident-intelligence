@@ -1,0 +1,6 @@
+[Mon Jan 02 10:00:00 2023] [error] ok line
+this is not a log line
+
+[Mon Jan 02 10:00:01 2023] [error] second ok
+[Xyz Foo 99 99:99:99 2023] [error] bad time
+[Mon Jan 02 10:00:02 2023] error missing brackets

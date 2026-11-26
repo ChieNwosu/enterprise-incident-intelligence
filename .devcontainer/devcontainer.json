@@ -1,0 +1,10 @@
+{
+  "name": "enterprise-incident-intelligence",
+  "image": "mcr.microsoft.com/devcontainers/go:1.25",
+  "postCreateCommand": "go version && go build ./...",
+  "customizations": {
+    "vscode": {
+      "extensions": ["golang.go"]
+    }
+  }
+}
