@@ -12,8 +12,8 @@ Only Day 1 is implemented. Everything else is planned.
 | Reference CSV field agreement check | Done (Day 1) |
 | Synthetic test fixtures, unit and CLI tests | Done (Day 1) |
 | Dataset download script and provenance notes | Done (Day 1) |
-| GitHub Actions workflow, devcontainer | Written. CI has not been observed running; nothing is claimed about its result. |
-| Curriculum skeleton, evergreen notes, support case CASE-001 | Done (Day 1), skeleton level |
+| GitHub Actions workflow, devcontainer | Written. CI for commit 452f848 (pre-remediation): workflow `ci` run [45618163063](https://github.com/ChieNwosu/enterprise-incident-intelligence/actions/runs/45618163063) (push) and run [45618184731](https://github.com/ChieNwosu/enterprise-incident-intelligence/actions/runs/45618184731) (pull_request) both concluded success, per the GitHub REST API. Per-step job logs were not inspected. This applies only to 452f848; CI for later commits is pending until checked. |
+| Curriculum skeleton, evergreen notes, support cases CASE-001 and CASE-002 | Done (Day 1), skeleton level |
 | AWS, Kubernetes, PyTorch, SAS, anomaly or incident models | Planned, not started |
 
 ## Quick start
@@ -28,6 +28,7 @@ go run ./cmd/eii -input data/raw/Apache_2k.log \
 ```
 
 Flags: `-input` (required), `-reference`, `-output`, `-top`, `-max-line-bytes`, `-strict`.
+`-output` must be a different file from both `-input` and `-reference`; otherwise the run exits 1 and the sources are left untouched. A report from an earlier successful run can remain on disk after a later fatal run. With `-strict`, a valid report is written before the exit code 3 is returned.
 Exit codes: 0 success (malformed records are counted, not fatal), 1 fatal input/output error (including a record longer than the limit), 2 usage error, 3 malformed records present with `-strict`.
 
 ## Data

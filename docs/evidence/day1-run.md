@@ -1,6 +1,6 @@
 # Day 1 run evidence (counts only)
 
-No raw log content is recorded here. CI has not been observed running; nothing below is a CI result.
+No raw log content is recorded here. The local results below are not CI results. CI for commit 452f848 (pre-remediation): workflow `ci` run [45618163063](https://github.com/ChieNwosu/enterprise-incident-intelligence/actions/runs/45618163063) (push) and run [45618184731](https://github.com/ChieNwosu/enterprise-incident-intelligence/actions/runs/45618184731) (pull_request) both concluded success, per the GitHub REST API. Per-step job logs were not inspected. This applies only to 452f848; CI for later commits is pending until checked.
 
 ## Local verification (Go 1.25.1 linux/amd64)
 
